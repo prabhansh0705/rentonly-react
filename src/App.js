@@ -1,4 +1,6 @@
+import React from 'react';
 import './App.css';
+import { GetInTouch } from './components/GetInTouch';
 
 // Images import
 import Ellipse from './images/Ellipse 35.svg';
@@ -8,7 +10,6 @@ import header_image_list_2 from './images/Rectangle 122.png';
 import header_image_list_3 from './images/Rectangle 123.png';
 import line_3 from './images/Line 3.png';
 import centerEllipse from './images/Ellipse 36.png';
-import arrow_right from './images/arrow-right.png'
 import center_secondary_ellipse from './images/Ellipse 37.png'
 
 // Compoonent Import
@@ -18,9 +19,6 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="body_css">
-
-      {/* function() */}
-
         <header className="header-css">
             <div className="header_content">
 
@@ -60,7 +58,7 @@ function App() {
         </div>
         <Cards/>
 
-        <div className='explore_cards_container'>
+        {/* <div className='explore_cards_container'>
           <div className='explore_cards_container_heading'>
             <h1 className='explore_cards_container_heading_text'>The entire process runs smoothly & seamlessly with RentOnly by your side.</h1>
           </div>
@@ -68,7 +66,7 @@ function App() {
             <p className='explore_cards_container_button_text'>Get in touch today</p>
             <img className='arrow_right_image' src={arrow_right}/>
           </div>
-        </div>
+        </div> */}
 
         <div className='center_container_secondary_heading'>
           <div className='center_container_secondary_heading_Ellipse'>
@@ -77,10 +75,7 @@ function App() {
           <div className='center_container_secondary_heading_wrapper'>
             <h1 className='center_container_secondary_heading_text'>We take care of all these huge upfront costs & operational overhead so that you can focus on providing a great customer experience.</h1>
           </div>
-          <div className='explore_cards_container_button explore_cards_container_second_button'>
-            <p className='explore_cards_container_button_text'>Get in touch today</p>
-            <img className='arrow_right_image' src={arrow_right}/>
-          </div>
+          <GetInTouch/>
         </div>
         <Footer/>
     </div>

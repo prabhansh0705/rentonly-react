@@ -4,6 +4,7 @@ import line_3 from '../images/Line 3.png';
 let Footer = () => {
     return(
         <>
+        <div className='footer'>
             <div className='footer_main_Heading_wrapper'>
                 <img className='dots_footer' src={dots_footer}/>
                 <div className="subheading_2 footer_main_heading_container">
@@ -44,7 +45,7 @@ let Footer = () => {
 
                 <div className='footer_subheadings_1 subheading_4_custom_style'>
                     <div className='footer_subheadings_1_container'>
-                        <h1 className='footer_subheadings_1_text'>How much does RentOnly charge for all this?</h1>
+                        <h1 className='footer_subheadings_1_text footer_subheading_4_mobile_text'>How much does RentOnly charge for all this?</h1>
                     </div>
                     <div className='footer_subheadings_1_description_container'>
                         <p className='footer_subheadings_1_description_text'>Shhh, it’s secret 🤫<br/>Our pricing varies from business to business based on their individual needs. Reach out to our team at hey@rentonly.co and we can figure out a pricing plan together :)</p>
@@ -55,6 +56,7 @@ let Footer = () => {
 
             <div className='copy_rights_container'>
                 <p className='copy_rights_text'>RentOnly  |  All Rights Reserved | 2023</p>
+            </div>
             </div>
         </>
     )
